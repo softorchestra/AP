@@ -1,0 +1,2 @@
+Use the following command line to compile FreeDraw Utility.
+gcc -Wall -g main.c -o FreeDraw `pkg-config --cflags gtk+-2.0` `pkg-config --libs gtk+-2.0`

@@ -1,0 +1,6 @@
+Use the following command line to compile RS232 Calibration Utility.
+Before Fedora 13
+gcc -Wall -g main.c interface.c -o Calib_3PUSB `pkg-config --cflags gtk+-2.0` `pkg-config --libs gtk+-2.0`
+
+After Fedora 13
+gcc -Wall -g main.c interface.c -o Calib_3PUSB `pkg-config --cflags gtk+-2.0` `pkg-config --libs gtk+-2.0` -lX11 -lXi
